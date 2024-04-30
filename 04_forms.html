@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formuláře</title>
+</head>
+<body>
+
+<h1>Formulář</h1>
+
+<form action="index.html" method="get">
+  <label for="firstname">Zadejte jméno: </label>
+  <input type="text" name="firstname" id="firstname"><br>
+  <label for="lastname">Zadejte příjmení: </label>
+  <input type="text" name="lastname" id="lastname"><br>
+  <label for="message">Zadejte zprávu</label>
+  <textarea cols="10" row="10" name="message" id="message"></textarea><br>
+  <label for="city">Vyber oblíbené město:</label>
+  <select name="city" id="city">
+    <option value="Praha">Praha</option>
+    <option value="Brno">Brno</option>
+    <option value="Ostrava">Ostrava</option>
+  </select><br>
+  <input type="checkbox" name="accept"> Souhlasím s podmínkami <br>
+  <input type="checkbox" name="newsletter"> Souhlasím se zasíláním obchodních emailů <br>
+  <label for="sex">Pohlaví:</label> <br>
+  <input type="radio" name="sex" id="sex" value="female"> Žena <br>
+  <input type="radio" name="sex" value="male"> Muž <br>
+  <input type="radio" name="sex" value="none"> Nechci uvést <br>
+  <label for="file">Vyberte soubor:</label>
+  <input type="file" name="file" id="file"> <br>
+  <label for="date">Datum:</label>
+  <input type="date" name="date" id="date"> <br>
+  <label for="time">Čas:</label>
+  <input type="time" name="time" id="time"> <br>
+  <label for="color">Barva:</label>
+  <input type="color" name="color" id="color"> <br>
+  <input type="hidden" name="secretvalue" value="hodnota">
+  <label for="email">Email:</label>
+  <input type="email" name="email" id="email"> <br>
+  <label for="tel">Telefon:</label>
+  <input type="tel" name="tel" id="tel"> <br>
+  <label for="passwd">Heslo:</label>
+  <input type="password" name="passwd" id="passwd"> <br>
+  <label for="number">Číslo:</label>
+  <input type="number" name="number" id="number" max="10" min="0"> <br>
+  <input type="reset" value="Vymazat">
+  <input type="submit" value="Odeslat">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabulky</title>
+</head>
+<body>
+
+<h1>Základní tabulka</h1>
+<table border="1" bgcolor="blue"> <!-- začátek tabulky, border = typ ohraničení -->
+  <tbody>
+   <!-- th = Table Header, hlavička tabulky -->
+  <th>Sloupec 1</th>
+  <th>Sloupec 2</th>
+  <th>Sloupec 3</th>
+  <tr> <!-- tr = Table Row, první řádek tabulky -->
+    <td bgcolor="green">Sloupec 1</td>  <!-- td = Table Data, první sloupec -->
+    <td>Sloupec 2</td>
+    <td>Sloupec 3</td>
+  </tr> <!-- konec prvního řádku tabulky -->
+  <tr>  <!-- druhý řádek tabulky -->
+    <td>A</td>
+    <td>B</td>
+    <td>C</td>
+  </tr>  <!-- konec druhého řádku tabulky -->
+  <tr>
+    <td>20.5</td>
+    <td>30.8</td>
+    <td>11.1</td>
+    <!-- <td>555</td> pozor, tento řádek by měl více sloupců -->
+  </tr>
+  </tbody>
+</table> <!-- konec tabulky -->
+
+<h1>Tabulka se sloučenými řádky i sloupci</h1>
+<table border="1" bgcolor="yellow">
+  <tbody>
+  <tr>
+    <th rowspan="2" colspan="2"></th>
+    <th colspan="2">Used Belt Deflection</th> <!-- colspan="2" = spojíme dva sloupce -->
+    <th rowspan="2">Set deflection of new belt</th> <!-- rowspan="2" = spojíme dva řádky -->
+  </tr>
+  <tr>
+    <!-- první dva sloupce jsou již definované v prvním řádku -->
+    <th>Limit</th>
+    <th>Adjust Deflection</th>
+    <!-- poslední sloupec je již definovaný v prvním řádku -->
+  </tr>
+  <tr>
+    <td rowspan="2"><b>Alternator</b></td>
+    <td>Models without AC</td>
+    <td>10mm</td>
+    <td>5-7mm</td>
+    <td rowspan="2">5-7mm</td>
+  </tr>
+  <tr>
+    <td>Models with AC</td>
+    <td>12mm</td>
+    <td>6-8mm</td>
+  </tr>
+  <tr>
+    <td colspan="2"><b>Power Steering Oil Pump</b></td>
+    <td>12.5mm</td>
+    <td>7.9mm</td>
+    <td>6-8mm</td>
+  </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
