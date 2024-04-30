@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<!-- This is the content of the comment -->
+
+<!-- Víceřádkový
+
+komentář -->
+
+<!--
+<div>
+  <p>
+    Můj první odstavec v HTML.
+  </p>
+</div>
+-->
+
+<!-- Nadpisy -->
+<h1>Nadpis první úrovně</h1>
+
+<h2>Nadpis druhé úrovně</h2>
+
+<H3>Nadpis třetí úrovně</H3>  <!-- tagy mohou být psány velkým písmem -->
+
+<h1>Odstavec</h1>
+<!-- Paragraph - Odstavec -->
+<p>This is the content of the paragraph. You can enter text of any length here.
+  This is the content of the paragraph. You can enter text of any
+  length here. This is the content of the
+
+
+
+  paragraph. You can enter text of any length here. This is the content of the paragraph.
+  You can enter text of any length here. This is the content of the paragraph.
+  You can enter text of any length here.</p>
+
+<h1>Odkazy</h1>
+    <!-- Hyperlink - odkazy -->
+    <a href="https://sdacademy.cz" target="_blank">Webová stránka SDAcademy</a><br><br>
+    <!-- br (brake) = zalomení řádku -->
+
+<h1>Obrázky</h1>
+    <h2>Lokální obrázky</h2>
+        <!-- Image - obrázky -->
+        <img src="brno.png" alt="Obrázek Brna" width="100px" height="100px"> <!-- lokální obrázek -->
+        <br>
+        <img src="images/brno1.png" alt="Obrázek Brna" height="100px"> <!-- lokální obrázek v podadresáři -->
+        <br>
+        <img src="../13_html/images/brno1.png" alt="Obrázek Brna" width="100px"> <!-- lokální obrázek v nadřazeném adresáři -->
+    <h2>Externí obrázek</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Brno_Montage_IV.png/800px-Brno_Montage_IV.png"
+            alt="Obrázek Brna na Wikipedii" width="100px"> <!-- odkaz na externí obrázek -->
+
+    <h2>Odkaz pomocí obrázku</h2>
+        <!-- Odkaz pomocí obrázku -->
+        <a href="https://cs.wikipedia.org/wiki/Brno">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Brno_Montage_IV.png/800px-Brno_Montage_IV.png"
+            alt="Obrázek Brna na Wikipedii" width="100px">
+        </a>
+
+<h1>Seznamy</h1>
+    <h2>Číslovaný seznam</h2>
+        <ol> <!-- Ordered List = uspořádaný seznam -->
+            <li>První položka</li>
+            <li>Další položka</li>
+            <li>Třetí</li>
+        </ol>
+
+    <h2>Nečíslovaný seznam</h2>
+        <ul> <!-- Unordered List = neuspořádaný seznam -->
+            <li>První položka</li>
+            <li>Další položka</li>
+            <li>Třetí</li>
+        </ul>
+
+    <h2>Vnořené seznamy</h2>
+        <ol>
+            <li>První</li>
+            <ol>
+                <li>První - vnořená 1</li>
+                <li>První - vnořená 2</li>
+                <li>První - vnořená 3</li>
+            </ol>
+            <li>Druhá</li>
+            <li>Třetí</li>
+            <ul>
+                <li>Třetí - vnořená 1</li>
+                <li>Třetí - vnořená 2</li>
+                <li>Třetí - vnořená 3</li>
+            </ul>
+            <li>Čtvrtá</li>
+        </ol>
+        <hr>
+        <ul>
+            <li>První</li>
+            <ol>
+                <li>První - vnořená 1</li>
+                <li>První - vnořená 2</li>
+                <li>První - vnořená 3</li>
+            </ol>
+            <li>Druhá</li>
+            <li>Třetí</li>
+                <ul>  <!-- začátek seznamu -->
+                    <li>Třetí - vnořená 1</li>
+                    <li>Třetí - vnořená 2</li>
+                    <ul>
+                        <li>Vnoření třetí úrovně 1</li>
+                        <li>Vnoření třetí úrovně 2</li>
+                        <li>Vnoření třetí úrovně 3 s <a href="https://cs.wikipedia.org/wiki/Brno">odkazem</a></li>
+                    </ul>
+                    <li>Třetí - vnořená 3</li>
+                </ul> <!-- konec seznamu -->
+            <li>Čtvrtá</li>
+        </ul>
+
+</body>
+
+</html>
