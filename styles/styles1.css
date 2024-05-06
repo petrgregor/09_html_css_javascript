@@ -44,6 +44,7 @@ h1, p, div {
 p {
     color: red; /* červená barva = #FF0000 */
     /* color: #FFFFFF;  /* bílá barva */
+    color: #64172D;
     color: rgb(100, 23, 45);
     color: hsl(0, 100%, 50%);
     color: rgba(100, 23, 45, 0.7); /* a = Alfa kanál = průhlednost */
@@ -113,6 +114,9 @@ p {
 /* font-style = styl písma */
 p {
     font-style: normal;
+    /*
+    italic = kurzíva
+    */
 }
 
 /* font-family */
@@ -125,9 +129,9 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 
-/* picture as a backgroung = obrázek na pozadí */
+/* picture as a background = obrázek na pozadí */
 div {
-    background-image: url('brno.png');
+    background-image: url('images/brno1.png');
 }
 
 /* list styling */
@@ -139,11 +143,11 @@ ul {
     circle = kolečko
     square = čtvereček
     */
-    list-style-image: url('blue-square.png');
+    /*list-style-image: url('blue-square.png');*/
 }
 
 ol {
-    list-style-type: upper-alpha;
+    list-style-type: lower-alpha;
     /*
     upper-roman = velká římská
     lower-roman = malá římská
