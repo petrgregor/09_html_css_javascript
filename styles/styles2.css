@@ -1,0 +1,39 @@
+body {
+    background-color: pink;
+}
+
+.class1 {
+    width: 150px;
+    /* height: 50px; */
+    text-align: justify;
+    border: 2px solid black;
+    padding: 20px; /* padding pro všechny strany */
+    /* padding pro každou stranu zvlášť */
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    /* nebo jednodušeji */
+    padding: 10px 30px 10px 30px;
+
+    margin: 20px; /* margin pro všechny strany */
+    /* margin pro každou stranu zvlášť */
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    /* nebo jednodušeji */
+    margin: -8px 0px 5px -8px;
+
+    float: left;
+}
+
+ul {
+    margin-bottom: 50px;
+    list-style-type: none;
+}
+
+li {
+    float: left;
+    margin-bottom: 50px;
+}

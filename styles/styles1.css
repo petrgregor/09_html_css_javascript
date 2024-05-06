@@ -1,0 +1,188 @@
+/* import jiného css */
+@import "https://fonts.googleapis.com/css?family=Roboto&display=swap";
+/* druhý způsob */
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+/* Tag selector */
+h1 {
+    color: yellow;
+}
+
+h1 {
+    color: black;
+}
+
+/* Class selector */
+.red-colored {
+    color: red;
+}
+
+.blue-colored {
+    color: blue;
+}
+
+/* ID selector */
+#p3 {
+    color: green;
+}
+
+/* Attribute selector */
+input[type="text"] {
+    color: red;
+}
+
+/* Pouze tag H1, který má class="blue-colored" */
+h1.blue-colored {
+    text-transform: uppercase;
+}
+
+h1, p, div {
+    text-decoration: underline;
+}
+
+/* color property = barva textu */
+p {
+    color: red; /* červená barva = #FF0000 */
+    /* color: #FFFFFF;  /* bílá barva */
+    color: rgb(100, 23, 45);
+    color: hsl(0, 100%, 50%);
+    color: rgba(100, 23, 45, 0.7); /* a = Alfa kanál = průhlednost */
+    /* color: hsla(a0, 100%, 50%, 0.5); */
+}
+
+/* background-color = barva pozadí */
+
+body {
+    background-color: lightblue;
+}
+
+div {
+    background-color: green;
+}
+
+p {
+    background-color: yellow;
+}
+
+/* border = ohraničení */
+div {
+    /*border: tloušťka typ-čáry barva*/
+    border: 3px dotted red;
+    /*
+    tloušťka v různých jednotkách
+    typ-čáry:
+        solid = plná čára
+        dashed = čárkovaná
+        dotted = tečkovaná
+    barva
+    */
+}
+
+/* text-align = zarovnání textu */
+h1 {
+    text-align: center;
+    /*
+    right = do prava
+    left = do leva
+    center = na střed
+    justify = do bloku
+    */
+}
+
+p {
+    text-align: justify;
+}
+
+/* font-weight = tloušťka písma */
+p {
+    font-weight: 800;
+    /*
+    from 100 to 900, with the value every 100
+    normal
+    bold = tučné
+    light
+    lighter
+    */
+}
+
+/* font-size = velikost textu */
+p {
+    font-size: 10px;
+}
+
+/* font-style = styl písma */
+p {
+    font-style: normal;
+}
+
+/* font-family */
+p {
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* importing the font */
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* picture as a backgroung = obrázek na pozadí */
+div {
+    background-image: url('brno.png');
+}
+
+/* list styling */
+ul {
+    /* list-style: none; */
+    /*
+    list-style-type: square;
+    none = nic, bez značky
+    circle = kolečko
+    square = čtvereček
+    */
+    list-style-image: url('blue-square.png');
+}
+
+ol {
+    list-style-type: upper-alpha;
+    /*
+    upper-roman = velká římská
+    lower-roman = malá římská
+    upper-alpha = velká písmenka
+    lower-alpha = malá písmenka
+    */
+}
+
+/* units of measure */
+/* px = pixely */
+div {
+    width: 300px;
+}
+
+/* percentages */
+div {
+    width: 50%;
+}
+
+/* REM = relativní velikost vzhledem k výšce písma */
+/*html {
+    font-size: 12px;
+}*/
+
+.blue-colored {
+    font-size: 1.5rem;
+}
+
+/* EM */
+.parent {
+  font-size: 12px;
+}
+
+.child {
+  font-size: 1.5em; /* 1.5 * 10px = 15px */
+}
+
+/* Viewport Width and Viewport Height */
+div {
+  width: 50vw; /* Half the width of the browser window */
+  height: 50vh; /* The entire height of the browser window */
+}
