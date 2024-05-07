@@ -1,0 +1,32 @@
+div {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.father {
+    background-color: lightGreen;
+    height: 500px;
+}
+
+.child-pink {
+    background-color: lightPink;
+    height: 50px;
+
+    /* Additional properties: */
+    /*position: relative;
+    left: 30px; /* move 30px from left */
+    /*top: 30px; /* move 30px from top */
+
+    /*position: absolute;
+    left: 70px; /* move 70px from left */
+    /*top: 95px; /* move 95px from top */
+
+    position: fixed;
+    right: 130px; /* move 130px from right */
+    top: 130px; /* move 130px from top */
+}
+
+.child-blue {
+    background-color: lightBlue;
+    height: 50px;
+}
