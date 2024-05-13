@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+</head>
+<body>
+<h1>Fill this form:</h1>
+<form method="post" action="#">
+  <p>
+    <label for="firstName">First name: </label>
+    <input type="text" name="firstName" id="firstName" required/>
+  </p>
+  <p>
+    <label for="lastName">Last name: </label>
+    <input type="text" name="lastName" id="lastName" required/>
+  </p>
+  <p>
+    <label for="email">Email: </label>
+    <input type="email" name="email" id="email" required/>
+  </p>
+  <p>
+    <label for="province">Voivodeship: </label>
+    <select name="province" id="province">
+      <option value="łódzkie">Łódzkie</option>
+      <option value="dolnośląskie">Dolnośląskie</option>
+      <option value="opolskie">Opolskie</option>
+      <option value="mazowieckie">Mazowieckie</option>
+    </select>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+    <button type="reset">Reset</button>
+  </p>
+</form>
+</body>
+</html>
