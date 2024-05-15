@@ -7,10 +7,45 @@
   <script>
     function showJSON() {
         // TODO showJSON
+        /*
+        * The function showJson displays the text representation of the paragraph
+        * and the list in the form of a JSON object.
+        * The result should be shown in the "pre id=result" field:
+        *
+        * * the text of the paragraph with the id "paragraph" is in the "text" field of the object,
+        * * values from the list with the id "list" are in the table in the "list" field.
+        * */
+      let text = document.getElementById("paragraph").innerText;
+      console.log("text: " + text);
+
+      let ulList = document.getElementsByTagName("li");
+      console.log("ulList: " + ulList);
+      let list = [];
+      for (let i = 0; i < ulList.length; i++) {
+        console.log(ulList[i].innerText);
+        list.push(ulList[i].innerText);
+      }
+      console.log("list: " + list);
+
+      var json = {
+          text: text,
+          list: list
+      }
+
+      var strJSON = JSON.stringify(json);
+      console.log(strJSON);
+
+      let result = document.getElementById("result");
+      result.innerText = strJSON;
     }
 
     function toObject() {
         // TODO toObject
+        /*
+        * The toObject function takes a value from the "result" field
+        * and converts it into an object. This one should be listed on the console.
+        * The function is supposed to work only if there is data in the "result" field!
+        * */
     }
   </script>
 </head>
